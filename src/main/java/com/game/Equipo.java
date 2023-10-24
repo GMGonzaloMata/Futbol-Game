@@ -61,4 +61,8 @@ public class Equipo {
         }
         return plantel.toString();
     }
+
+    public List<IJugador> getJugadores() {
+        return jugadores;
+    }
 }

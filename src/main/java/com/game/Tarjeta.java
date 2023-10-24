@@ -4,7 +4,7 @@ public abstract class Tarjeta {
     private String color;
     private IJugador jugador;
 
-    public Tarjeta(String color, IJugador  jugador) {
+    public Tarjeta(String color, IJugador jugador) {
         setColor(color);
         setJugador(jugador);
     }

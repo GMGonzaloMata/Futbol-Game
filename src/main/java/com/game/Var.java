@@ -25,4 +25,11 @@ public class Var {
         listaTarjetas.addAll(partido.tarjetas.stream().filter(buscarTarjeta).collect(Collectors.toList()));
         return listaTarjetas.size();
     }
+
+    public int cantidadTarjetas(Equipo equipo){
+        List<Tarjeta> listaTarjetas = new ArrayList<>();
+        Predicate<Tarjeta> buscarTarjeta = tarjeta -> equipo.getJugadores().contains(tarjeta.getJugador());
+        listaTarjetas.addAll(partido.getTarjetas().stream().filter(buscarTarjeta).collect(Collectors.toList()));
+        return listaTarjetas.size();
+    }
 }
