@@ -1,6 +1,6 @@
 package com.game;
 
-public class Jugador implements IJugador {
+public class Jugador implements IJugador, IImprimible {
     private String posicion;
     public String name;
     public int numero;
@@ -24,5 +24,9 @@ public class Jugador implements IJugador {
 
     public void setPosicion(String posicion) {
         this.posicion = posicion;
+    }
+    
+    public String impresion(){
+        return "[Jugador " + getNumero() + "] " + getName() + " > " + getPosicion();
     }
 }

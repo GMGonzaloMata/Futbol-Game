@@ -1,6 +1,6 @@
 package com.game;
 
-public class Estadio {
+public class Estadio implements IImprimible{
     private String name;
     private String ciudad;
     private String pais;
@@ -26,4 +26,8 @@ public class Estadio {
     public String toString(){
         return name + ", " + ciudad + " (" + pais + ")";
     }
+
+    public String impresion(){
+        return "[Estadio] " + getName() + " (" + getCiudad() + " - " + getPais() + ")";
+}
 }

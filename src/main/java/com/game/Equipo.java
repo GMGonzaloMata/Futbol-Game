@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-public class Equipo {
+public class Equipo implements IImprimible{
     private String name;
     private String abreviatura;
     private List<IJugador> jugadores;
@@ -64,5 +64,9 @@ public class Equipo {
 
     public List<IJugador> getJugadores() {
         return jugadores;
+    }
+
+    public String impresion(){
+        return "[Equipo] " + getName() + " > " + getAbreviatura();
     }
 }
