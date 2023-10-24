@@ -7,7 +7,7 @@ import com.game.Estadio;
 import com.game.Jugador;
 import com.game.Partido;
 import com.game.TarjetaAmarilla;
-import com.game.TarjetaBase;
+import com.game.Tarjeta;
 import com.game.TarjetaRoja;
 
 public class TarjetaTest {
@@ -25,7 +25,7 @@ public class TarjetaTest {
 
         Partido partidoIda = new Partido(palmeiras, boca, "Semifinal Partido Ida");    
 
-        TarjetaBase tarjetaRojaParaJugador10DeBoca = new TarjetaBase("ROJA", jugador10){};
+        Tarjeta tarjetaRojaParaJugador10DeBoca = new Tarjeta("ROJA", jugador10){};
 
         partidoIda.agregar(tarjetaRojaParaJugador10DeBoca);
 

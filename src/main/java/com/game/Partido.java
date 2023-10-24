@@ -10,7 +10,7 @@ public class Partido {
     private String name;
     private Equipo local;
     private Equipo visitante;
-    private List<TarjetaBase> tarjetas;
+    public List<Tarjeta> tarjetas;
     private Estadio estadio;
 
     public Partido(Equipo local, Equipo visitante, String name){
@@ -32,7 +32,7 @@ public class Partido {
         return name + " " + local.getAbreviatura() + "x" + visitante.getAbreviatura();
     }
 
-    public List<TarjetaBase> getTarjetas() {
+    public List<Tarjeta> getTarjetas() {
         return tarjetas;
     }
 
@@ -40,7 +40,7 @@ public class Partido {
         return estadio;
     }
 
-    public void agregar(TarjetaBase tarjeta){
+    public void agregar(Tarjeta tarjeta){
         tarjetas.add(tarjeta);
     }
 

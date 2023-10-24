@@ -1,10 +1,10 @@
 package com.game;
 
-public abstract class TarjetaBase {
+public abstract class Tarjeta {
     private String color;
-    protected Jugador jugador;
+    private IJugador jugador;
 
-    public TarjetaBase(String color, Jugador jugador) {
+    public Tarjeta(String color, IJugador  jugador) {
         setColor(color);
         setJugador(jugador);
     }
@@ -18,11 +18,11 @@ public abstract class TarjetaBase {
     }
 
 
-    public Jugador getJugador() {
+    public IJugador  getJugador() {
         return jugador;
     }
 
-    private void setJugador(Jugador value) {
+    private void setJugador(IJugador  value) {
         this.jugador = value;
     }
    

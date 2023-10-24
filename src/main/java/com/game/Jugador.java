@@ -1,8 +1,10 @@
 package com.game;
 
 public class Jugador implements IJugador {
+    private String posicion;
     public String name;
     public int numero;
+    
     public Jugador(String name, int numero){
         this.name = name;
         this.numero = numero;
@@ -14,5 +16,13 @@ public class Jugador implements IJugador {
 
     public int getNumero() {
         return numero;
+    }
+
+    public String getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(String posicion) {
+        this.posicion = posicion;
     }
 }
