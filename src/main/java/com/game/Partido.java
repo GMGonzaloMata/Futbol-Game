@@ -10,7 +10,7 @@ public class Partido {
     private String name;
     private Equipo local;
     private Equipo visitante;
-    private List<TarejtaBase> tarjetas;
+    private List<TarejetaBase> tarjetas;
 
     public Partido(Equipo local, Equipo visitante, String name){
         this.local = local;
@@ -21,5 +21,18 @@ public class Partido {
 
     public String getName() {
         return name + " " + local.getAbreviatura() + "x" + visitante.getAbreviatura();
+    }
+
+    public List<TarejetaBase> getTarjetas() {
+        return tarjetas;
+    }
+
+    public void agregar(TarejetaBase tarjeta){
+        tarjetas.add(tarjeta);
+    }
+
+    public int tarjetasCantidad(){
+        int cantidad = tarjetas.size();
+        return cantidad;
     }
 }
