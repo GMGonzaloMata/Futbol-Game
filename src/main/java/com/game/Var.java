@@ -7,9 +7,12 @@ import java.util.stream.Collectors;
 
 public class Var {
     private Partido partido;
+    private AsistenteDeVideo asistenteDeVideo;
+    private List<AVAR> aVar;
 
     public Var(Partido partido){
         this.partido = partido;
+        this.aVar = new ArrayList<>();
     }
 
     public int cantidadTarjetasRojas(){

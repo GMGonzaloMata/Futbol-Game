@@ -10,12 +10,16 @@ public class Partido {
     private Equipo visitante;
     public List<Tarjeta> tarjetas;
     private Estadio estadio;
+    private Arbitro arbitro;
+    private List<Arbitro> arbitroLinea;
+    private Arbitro arbitroAsistente;
 
     public Partido(Equipo local, Equipo visitante, String name){
         this.local = local;
         this.visitante = visitante;
         this.name = name;
         this.tarjetas = new ArrayList<>();
+        this.arbitroLinea = new ArrayList<>();
     }
 
     public Partido(Estadio estadio, Equipo local, Equipo visitante, String name){
@@ -24,6 +28,7 @@ public class Partido {
         this.name = name;
         this.estadio = estadio;
         this.tarjetas = new ArrayList<>();
+        this.arbitroLinea = new ArrayList<>();
     }
 
     public String getName() {
