@@ -14,42 +14,58 @@ public class Partido {
     private List&lt;Arbitro&gt; arbitroLinea;
     private Arbitro arbitroAsistente;
 
-<span class="fc" id="L17">    public Partido(Equipo local, Equipo visitante, String name){</span>
-<span class="fc" id="L18">        this.local = local;</span>
-<span class="fc" id="L19">        this.visitante = visitante;</span>
-<span class="fc" id="L20">        this.name = name;</span>
-<span class="fc" id="L21">        this.tarjetas = new ArrayList&lt;&gt;();</span>
-<span class="fc" id="L22">        this.arbitroLinea = new ArrayList&lt;&gt;();</span>
-<span class="fc" id="L23">    }</span>
+<span class="fc" id="L17">    public Partido(){</span>
 
-<span class="fc" id="L25">    public Partido(Estadio estadio, Equipo local, Equipo visitante, String name){</span>
-<span class="fc" id="L26">        this.local = local;</span>
-<span class="fc" id="L27">        this.visitante = visitante;</span>
-<span class="fc" id="L28">        this.name = name;</span>
-<span class="fc" id="L29">        this.estadio = estadio;</span>
-<span class="fc" id="L30">        this.tarjetas = new ArrayList&lt;&gt;();</span>
-<span class="fc" id="L31">        this.arbitroLinea = new ArrayList&lt;&gt;();</span>
-<span class="fc" id="L32">    }</span>
+<span class="fc" id="L19">    }</span>
+
+<span class="fc" id="L21">    public Partido(Equipo local, Equipo visitante, String name){</span>
+<span class="fc" id="L22">        this.local = local;</span>
+<span class="fc" id="L23">        this.visitante = visitante;</span>
+<span class="fc" id="L24">        this.name = name;</span>
+<span class="fc" id="L25">        this.tarjetas = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L26">        this.arbitroLinea = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L27">    }</span>
+
+<span class="fc" id="L29">    public Partido(Estadio estadio, Equipo local, Equipo visitante, String name){</span>
+<span class="fc" id="L30">        this.local = local;</span>
+<span class="fc" id="L31">        this.visitante = visitante;</span>
+<span class="fc" id="L32">        this.name = name;</span>
+<span class="fc" id="L33">        this.estadio = estadio;</span>
+<span class="fc" id="L34">        this.tarjetas = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L35">        this.arbitroLinea = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L36">    }</span>
 
     public String getName() {
-<span class="fc" id="L35">        return name + &quot; &quot; + local.getAbreviatura() + &quot;x&quot; + visitante.getAbreviatura();</span>
+<span class="fc" id="L39">        return name + &quot; &quot; + local.getAbreviatura() + &quot;x&quot; + visitante.getAbreviatura();</span>
     }
 
     public List&lt;Tarjeta&gt; getTarjetas() {
-<span class="fc" id="L39">        return tarjetas;</span>
+<span class="fc" id="L43">        return tarjetas;</span>
     }
 
     public Estadio getEstadio() {
-<span class="fc" id="L43">        return estadio;</span>
+<span class="fc" id="L47">        return estadio;</span>
     }
 
     public void agregar(Tarjeta tarjeta){
-<span class="fc" id="L47">        tarjetas.add(tarjeta);</span>
-<span class="fc" id="L48">    }</span>
+<span class="fc" id="L51">        tarjetas.add(tarjeta);</span>
+<span class="fc" id="L52">    }</span>
 
     public int tarjetasCantidad(){
-<span class="fc" id="L51">        int cantidad = tarjetas.size();</span>
-<span class="fc" id="L52">        return cantidad;</span>
+<span class="fc" id="L55">        int cantidad = tarjetas.size();</span>
+<span class="fc" id="L56">        return cantidad;</span>
     }
+
+    public void setArbitro(Arbitro arbitro) {
+<span class="fc" id="L60">        this.arbitro = arbitro;</span>
+<span class="fc" id="L61">    }</span>
+
+    public void setArbitroAsistente(Arbitro arbitroAsistente) {
+<span class="fc" id="L64">        this.arbitroAsistente = arbitroAsistente;</span>
+<span class="fc" id="L65">    }</span>
+
+    public void setArbitroLinea(List&lt;Arbitro&gt; arbitroLinea) {
+<span class="fc" id="L68">        this.arbitroLinea = arbitroLinea;</span>
+<span class="fc" id="L69">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>

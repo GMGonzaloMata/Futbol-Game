@@ -62,7 +62,7 @@ public class TarjetaTest {
         Partido partido = new Partido(estadioBombonera, boca, palmeiras, "Semifinal Partido Vuelta");    
 
 
-        TarjetaRoja tarjetaRojaParaJugador6DeBoca = new TarjetaRoja(jugadorBoca6);        
+        TarjetaRoja tarjetaRojaParaJugador6DeBoca = new TarjetaRoja(jugadorBoca6);      
         TarjetaAmarilla tarjetaAmarillaParaJugador10DeBoca = new TarjetaAmarilla(jugadorBoca10);        
         TarjetaAmarilla tarjetaAmarillaParaJugador10DePalmeiras = new TarjetaAmarilla(jugadorPalmeiras10);
 
@@ -75,7 +75,8 @@ public class TarjetaTest {
 
         assertEquals("ROJA", partido.getTarjetas().get(0).getColor());  
         assertEquals(6, partido.getTarjetas().get(0).getJugador().getNumero());                
-        assertEquals("Marcos Rojo", partido.getTarjetas().get(0).getJugador().getName());  
+        assertEquals("Marcos Rojo", partido.getTarjetas().get(0).getJugador().getName());
+        assertEquals("Tarjeta ROJA para Marcos Rojo", tarjetaRojaParaJugador6DeBoca.toString());  
          
          
         assertEquals("AMARILLA", partido.getTarjetas().get(1).getColor());  

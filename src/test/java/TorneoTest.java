@@ -61,5 +61,6 @@ public class TorneoTest {
         assertEquals("Semifinal Partido Vuelta FLUxINT", partido1Vuelta.getName());      
         assertEquals("Semifinal Partido Ida PALxBOC", partido2Ida.getName());        
         assertEquals("Semifinal Partido Vuelta BOCxPAL", partido2Vuelta.getName());
+        assertEquals("Copa Conmebol Libertadores", torneo.getName());
     }
 }

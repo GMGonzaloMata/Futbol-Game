@@ -1,10 +1,16 @@
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Test;
 
+import com.game.AVAR;
+import com.game.AsistenteDeVideo;
 import com.game.Equipo;
 import com.game.Estadio;
 import com.game.IJugador;
+import com.game.IntegranteDelVar;
 import com.game.Jugador;
 import com.game.Partido;
 import com.game.TarjetaAmarilla;
@@ -84,5 +90,20 @@ public class VarTest {
         assertEquals(2, elVar.cantidadTarjetas(boca));        
         assertEquals(1, elVar.cantidadTarjetas(palmeiras));
  
+    }
+
+    @Test
+    public void integrantesDelVar_Test(){
+        IntegranteDelVar asistenteDeVideo = new AsistenteDeVideo();
+        IntegranteDelVar AVAR1 = new AVAR();
+        IntegranteDelVar AVAR2 = new AVAR();
+        IntegranteDelVar AVAR3 = new AVAR();
+        List<IntegranteDelVar> listAVAR = new ArrayList<>();
+        listAVAR.add(AVAR1);
+        listAVAR.add(AVAR2);
+        listAVAR.add(AVAR3);
+        Var var = new Var();
+        var.setAsistenteDeVideo(asistenteDeVideo);
+        var.setaVar(listAVAR);
     }
 }

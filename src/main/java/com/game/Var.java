@@ -7,8 +7,12 @@ import java.util.stream.Collectors;
 
 public class Var {
     private Partido partido;
-    private AsistenteDeVideo asistenteDeVideo;
-    private List<AVAR> aVar;
+    private IntegranteDelVar asistenteDeVideo;
+    private List<IntegranteDelVar> aVar;
+
+    public Var(){
+
+    }
 
     public Var(Partido partido){
         this.partido = partido;
@@ -34,5 +38,13 @@ public class Var {
         Predicate<Tarjeta> buscarTarjeta = tarjeta -> equipo.getJugadores().contains(tarjeta.getJugador());
         listaTarjetas.addAll(partido.getTarjetas().stream().filter(buscarTarjeta).collect(Collectors.toList()));
         return listaTarjetas.size();
+    }
+
+    public void setAsistenteDeVideo(IntegranteDelVar asistenteDeVideo) {
+        this.asistenteDeVideo = asistenteDeVideo;
+    }
+
+    public void setaVar(List<IntegranteDelVar> aVar) {
+        this.aVar = aVar;
     }
 }

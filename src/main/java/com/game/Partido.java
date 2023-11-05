@@ -14,6 +14,10 @@ public class Partido {
     private List<Arbitro> arbitroLinea;
     private Arbitro arbitroAsistente;
 
+    public Partido(){
+
+    }
+
     public Partido(Equipo local, Equipo visitante, String name){
         this.local = local;
         this.visitante = visitante;
@@ -50,5 +54,17 @@ public class Partido {
     public int tarjetasCantidad(){
         int cantidad = tarjetas.size();
         return cantidad;
+    }
+
+    public void setArbitro(Arbitro arbitro) {
+        this.arbitro = arbitro;
+    }
+
+    public void setArbitroAsistente(Arbitro arbitroAsistente) {
+        this.arbitroAsistente = arbitroAsistente;
+    }
+
+    public void setArbitroLinea(List<Arbitro> arbitroLinea) {
+        this.arbitroLinea = arbitroLinea;
     }
 }
