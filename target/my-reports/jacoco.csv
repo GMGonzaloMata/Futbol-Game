@@ -10,7 +10,7 @@ football,com.game,Arbitro,0,3,0,0,0,1,0,1,0,1
 football,com.game,PantallaLed,0,6,0,0,0,2,0,2,0,2
 football,com.game,Var,0,102,0,0,0,22,0,10,0,10
 football,com.game,IntegranteDelVar,0,6,0,0,0,3,0,1,0,1
-football,com.game,TarjetaAmarilla,0,5,0,0,0,2,0,1,0,1
 football,com.game,Torneo,0,43,0,0,0,14,0,6,0,6
+football,com.game,TarjetaAmarilla,0,5,0,0,0,2,0,1,0,1
 football,com.game,TarjetaRoja,0,5,0,0,0,2,0,1,0,1
 football,com.game,AsistenteDeVideo,0,4,0,0,0,2,0,1,0,1
