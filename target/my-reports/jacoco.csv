@@ -1,0 +1,16 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+football,com.game,Jugador,0,30,0,0,0,10,0,6,0,6
+football,com.game,Equipo,0,153,1,11,0,32,1,15,0,10
+football,com.game,Estadio,0,37,0,0,0,10,0,6,0,6
+football,com.game,ArbitroBase,3,0,0,0,1,0,1,0,1,0
+football,com.game,Partido,0,75,0,0,0,22,0,7,0,7
+football,com.game,AVAR,3,0,0,0,1,0,1,0,1,0
+football,com.game,Tarjeta,16,23,0,0,3,10,1,5,1,5
+football,com.game,Arbitro,3,0,0,0,1,0,1,0,1,0
+football,com.game,PantallaLed,0,6,0,0,0,2,0,2,0,2
+football,com.game,Var,0,91,0,0,0,16,0,7,0,7
+football,com.game,IntegranteDelVar,8,0,0,0,2,0,2,0,2,0
+football,com.game,TarjetaAmarilla,0,5,0,0,0,2,0,1,0,1
+football,com.game,Torneo,3,40,0,0,1,13,1,5,1,5
+football,com.game,TarjetaRoja,0,5,0,0,0,2,0,1,0,1
+football,com.game,AsistenteDeVideo,3,0,0,0,1,0,1,0,1,0

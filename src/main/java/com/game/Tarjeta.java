@@ -28,9 +28,7 @@ public abstract class Tarjeta {
    
     @Override
     public String toString(){
-    return String.format("Tarjeta %s para %s",
-                getColor(),
-                getJugador().getName());
+    return String.format("Tarjeta %s para %s",getColor(),getJugador().getName());
     }
 }
 
